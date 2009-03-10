@@ -52,4 +52,5 @@ us_states_items = [
  ('WY', 'Wyoming')
 ]
 
+us_states_dict = dict(us_states_items)
 state_selection_items = [('', ''), ('--', 'Not in USA')] + us_states_items
