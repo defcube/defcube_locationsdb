@@ -10,6 +10,15 @@ def country_iso_to_2digit(isonumber):
         if c[2] == str(isonumber):
             return c[0]
     raise LookupError, "Cannot lookup %s" % isonumber
+
+def country_2digit_to_iso(countrycode):
+    for c in COUNTRIES_IN_DETAIL:
+        if c[0] == str(countrycode):
+            return c[2]
+    raise LookupError, "Cannot lookup %s" % countrycode
+    
+
+
         
 COUNTRIES_IN_DETAIL = (
 ('AF', 'AFG', '004', ('Afghanistan')), ('AX', 'ALA', '248', ('Aland Islands')), ('AL', 'ALB', '008', ('Albania')), ('DZ', 'DZA', '012', ('Algeria')), ('AS', 'ASM', '016', ('American Samoa')), ('AD', 'AND', '020', ('Andorra')), ('AO', 'AGO', '024', ('Angola')), ('AI', 'AIA', '660', ('Anguilla')), ('AQ', 'ATA', '010', ('Antarctica')), ('AG', 'ATG', '028', ('Antigua and Barbuda')), ('AR', 'ARG', '032', ('Argentina')), ('AM', 'ARM', '051', ('Armenia')), ('AW', 'ABW', '533', ('Aruba')), ('AU', 'AUS', '036', ('Australia')), ('AT', 'AUT', '040', ('Austria')), ('AZ', 'AZE', '031', ('Azerbaijan')), ('BS', 'BHS', '044', ('the Bahamas')), 
