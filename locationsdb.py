@@ -9,6 +9,12 @@ def country_iso_to_2digit(isonumber):
             return c[0]
     raise LookupError, "Cannot lookup %s" % isonumber
 
+def country_2digit_to_name(isonumber):
+    for c in COUNTRIES_IN_DETAIL:
+        if c[0] == str(isonumber):
+            return c[3]
+    raise LookupError, "Cannot lookup %s" % isonumber
+
 def country_2digit_to_iso(countrycode):
     for c in COUNTRIES_IN_DETAIL:
         if c[0] == str(countrycode):
