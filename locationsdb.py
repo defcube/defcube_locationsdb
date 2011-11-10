@@ -2,6 +2,9 @@ us_states_items = [("AA","Armed Forces Americas"),("AE","Armed Forces Europe, Mi
 us_states_dict = dict(us_states_items)
 state_selection_items = [('', ''), ('--', 'Not in USA')] + us_states_items
 
+us_states50_items = [("AK","Alaska"),("AL","Alabama"),("AR","Arkansas"),("AZ","Arizona"),("CA","California"),("CO","Colorado"),("CT","Connecticut"),("DC","District of Columbia"),("DE","Delaware"),("FL","Florida"),("GA","Georgia"),("HI","Hawaii"),("IA","Iowa"),("ID","Idaho"),("IL","Illinois"),("IN","Indiana"),("KS","Kansas"),("KY","Kentucky"),("LA","Louisiana"),("MA","Massachusetts"),("MD","Maryland"),("ME","Maine"),("MI","Michigan"),("MN","Minnesota"),("MO","Missouri"),("MS","Mississippi"),("MT","Montana"),("NC","North Carolina"),("ND","North Dakota"),("NE","Nebraska"),("NH","New Hampshire"),("NJ","New Jersey"),("NM","New Mexico"),("NV","Nevada"),("NY","New York"),("OH","Ohio"),("OK","Oklahoma"),("OR","Oregon"),("PA","Pennsylvania"),("PR","Puerto Rico"),("RI","Rhode Island"),("SC","South Carolina"),("SD","South Dakota"),("TN","Tennessee"),("TX","Texas"),("UT","Utah"),("VA","Virginia"),("VI","Virgin Islands"),("VT","Vermont"),("WA","Washington"),("WV","West Virginia"),("WI","Wisconsin"),("WY","Wyoming")]
+us_states50_dict = dict(us_states_items)
+
 def country_iso_to_2digit(isonumber):
     for c in COUNTRIES_IN_DETAIL:
         if c[2] == str(isonumber):
