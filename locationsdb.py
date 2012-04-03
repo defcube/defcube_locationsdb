@@ -5,6 +5,10 @@ state_selection_items = [('', ''), ('--', 'Not in USA')] + us_states_items
 us_states50_items = [("AK","Alaska"),("AL","Alabama"),("AR","Arkansas"),("AZ","Arizona"),("CA","California"),("CO","Colorado"),("CT","Connecticut"),("DC","District of Columbia"),("DE","Delaware"),("FL","Florida"),("GA","Georgia"),("HI","Hawaii"),("IA","Iowa"),("ID","Idaho"),("IL","Illinois"),("IN","Indiana"),("KS","Kansas"),("KY","Kentucky"),("LA","Louisiana"),("MA","Massachusetts"),("MD","Maryland"),("ME","Maine"),("MI","Michigan"),("MN","Minnesota"),("MO","Missouri"),("MS","Mississippi"),("MT","Montana"),("NC","North Carolina"),("ND","North Dakota"),("NE","Nebraska"),("NH","New Hampshire"),("NJ","New Jersey"),("NM","New Mexico"),("NV","Nevada"),("NY","New York"),("OH","Ohio"),("OK","Oklahoma"),("OR","Oregon"),("PA","Pennsylvania"),("PR","Puerto Rico"),("RI","Rhode Island"),("SC","South Carolina"),("SD","South Dakota"),("TN","Tennessee"),("TX","Texas"),("UT","Utah"),("VA","Virginia"),("VI","Virgin Islands"),("VT","Vermont"),("WA","Washington"),("WV","West Virginia"),("WI","Wisconsin"),("WY","Wyoming")]
 us_states50_dict = dict(us_states_items)
 
+canada_states = [("AB", "Alberta"),("BC", "British Columbia"),("MB", "Manitoba"),("NB", "New Brunswick"),("NL", "Newfoundland and Labrador"),("NS", "Nova Scotia"),("ON", "Ontario"),("PE", "Prince Edward Island"),("QC", "Quebec"),("SK", "Saskatchewan"),]
+
+us_states50_and_canada_states = us_states50_items + canada_states
+
 def country_iso_to_2digit(isonumber):
     for c in COUNTRIES_IN_DETAIL:
         if c[2] == str(isonumber):
