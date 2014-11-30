@@ -14,28 +14,28 @@ def country_iso_to_2digit(isonumber):
     for c in COUNTRIES_IN_DETAIL:
         if c[2] == str(isonumber):
             return c[0]
-    raise LookupError, "Cannot lookup %s" % isonumber
+    raise LookupError("Cannot lookup %s" % isonumber)
 
 
 def country_iso_to_name(isonumber):
     for c in COUNTRIES_IN_DETAIL:
         if c[2] == str(isonumber):
             return c[3]
-    raise LookupError, "Cannot lookup %s" % isonumber
+    raise LookupError("Cannot lookup %s" % isonumber)
 
 
 def country_2digit_to_name(countrycode):
     for c in COUNTRIES_IN_DETAIL:
         if c[0] == str(countrycode):
             return c[3]
-    raise LookupError, "Cannot lookup %s" % countrycode
+    raise LookupError("Cannot lookup %s" % countrycode)
 
 
 def country_2digit_to_iso(countrycode):
     for c in COUNTRIES_IN_DETAIL:
         if c[0] == str(countrycode):
             return c[2]
-    raise LookupError, "Cannot lookup %s" % countrycode
+    raise LookupError("Cannot lookup %s" % countrycode)
 
 
 COUNTRIES_IN_DETAIL = (
